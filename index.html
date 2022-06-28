@@ -10,9 +10,16 @@
 </head>
 <body>
 <div></div>
-<div>
-  <canvas id = "gameZone" height = "100px" width = "200px" style = "border:1px solid black">
+<div id = "canvasContainer">
+  <canvas id = "gameZone" height = "300px" width = "500px" style = "border:1px solid black">
   </canvas>
 </div>
+<script> //temp script location for canvas test
+  let canvas = document.getElementById("gameZone");
+  let canvasPointer = canvas.getContext("2d");
+  canvasPointer.moveTo(0, 0);
+  canvasPointer.lineTo(300, 500);
+  canvasPointer.stroke();
+</script>
 </body>
 </html>
